@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Command Center | SmokeX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div id="dashboard-container">
+        <div class="leftside-menu">
+            <div class="avatar">
+                <div class="icon"><p id="user-initials">XP</p></div>
+                <p id="display-username">Gamer Name</p>
+            </div>
+            <nav class="menu">
+                <li class="active"><i class="fas fa-home"></i> Home</li>
+                <li><i class="fas fa-gamepad"></i> My Games</li>
+                <li><i class="fas fa-trophy"></i> Achievements</li>
+                <li><i class="fas fa-users"></i> Contacts</li>
+                <li><i class="fas fa-cog"></i> Settings</li>
+                <li class="logout-btn"><i class="fas fa-power-off"></i> Logout</li>
+            </nav>
+        </div>
+
+        <div class="main-grid">
+            <div class="item one">
+                <h1 id="time" class="time">00:00</h1>
+                <h1 id="greeting">GOOD DAY</h1>
+                <p class="gold-text" id="welcome-name">CHAMPION</p>
+            </div>
+
+            <div class="item two">
+                <div class="music"><p>NOW STREAMING</p></div>
+                <div class="info">
+                    <div class="progress-bar">
+                        <div class="time--current">1:25</div>
+                        <div class="time--total">-3:25</div>
+                        <div class="fill"></div>
+                    </div>
+                    <div class="currently-playing">
+                        <h2 class="song-name">BATTLE READY</h2>
+                        <h3 class="artist-name">SMOKEX ORIGINALS</h3>
+                    </div>
+                    <div class="controls">
+                        <div class="option"><i class="fas fa-bars"></i></div>
+                        <div class="volume"><i class="fas fa-volume-up"></i></div>
+                        <div class="previous"><i class="fas fa-backward"></i></div>
+                        <div class="play"><i class="fas fa-play"></i></div>
+                        <div class="next"><i class="fas fa-forward"></i></div>
+                        <div class="shuffle"><i class="fas fa-random"></i></div>
+                        <div class="add"><i class="fas fa-plus"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item three">
+                <h2><i class="fas fa-cloud-sun"></i> 72°</h2>
+                <div class="weather">
+                    <p>OPTIMAL CONNECTIVITY</p>
+                    <p class="city">NAIROBI, KE</p>
+                </div>
+            </div>
+
+            <div class="item four">
+                <h1 id="date">JANUARY 01, 2024</h1>
+                <p><a>NO TOURNAMENTS TODAY</a></p>
+            </div>
+            
+            <div class="item five">
+                <div class="rooms--top">
+                    <p>SYSTEM STATUS</p>
+                </div>
+                <div class="rooms">
+                    <div class="rooms--btns">
+                        <label class="toggle">
+                            <input class="toggle-checkbox" type="checkbox" checked>
+                            <div class="toggle-switch"></div>
+                            <span class="toggle-label">GPU OVERCLOCK</span>
+                        </label>
+                        <label class="toggle">
+                            <input class="toggle-checkbox" type="checkbox">
+                            <div class="toggle-switch"></div>
+                            <span class="toggle-label">LOW LATENCY</span>
+                        </label>
+                        <label class="toggle">
+                            <input class="toggle-checkbox" type="checkbox" checked>
+                            <div class="toggle-switch"></div>
+                            <span class="toggle-label">STREAM MODE</span>
+                        </label>
+                        <label class="toggle">
+                            <input class="toggle-checkbox" type="checkbox">
+                            <div class="toggle-switch"></div>
+                            <span class="toggle-label">RGB SYNC</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item six">
+                <div class="reminders">
+                    <p>MISSIONS</p>
+                    <div class="reminder--btns">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                <div class="reminders--list">
+                    <label class="todo">
+                        <input class="todo-checkbox" type="checkbox" checked>
+                        <div class="todo-switch"></div>
+                        <span class="todo-label">Complete Daily Challenge</span>
+                    </label>
+                    <label class="todo">
+                        <input class="todo-checkbox" type="checkbox">
+                        <div class="todo-switch"></div>
+                        <span class="todo-label">Upgrade Gear Set</span>
+                    </label>        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>SMOKEX GAMING ARENA | © 2024</p>
+    </footer>
+    <script src="dashboard.js"></script>
+</body>
+</html>
